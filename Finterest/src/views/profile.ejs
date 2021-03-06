@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Imge</title>
+    <%- include("partial/head") %>
+</head>
+<body>
+    <div class="container p-2">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-4 offset-md-4">
+                <div class="card animated zoomIn">
+                    <img src="<%= image.Imagen%>" title="<%= image.Imagen%>" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title"> <%= image.Titulo%> </h5>
+                        <p class="card-text"> <%= image.Descripcion%> </p>
+                        <p> <%= format(image.FechaCreacion)%> </p>
+                        <a href="<%= image.ID%>/delete" class="btn btn-danger">
+                            Delete Image
+                        </a>
+                        <a href="/" class="btn btn-link">
+                            Back to List
+                        </a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

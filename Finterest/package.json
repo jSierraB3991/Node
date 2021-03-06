@@ -1,0 +1,36 @@
+{
+  "name": "Finterest",
+  "version": "1.0.0",
+  "description": "the first app with NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Judasibe/Finterest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Judasibe/Finterest/issues"
+  },
+  "homepage": "https://github.com/Judasibe/Finterest#readme",
+  "dependencies": {
+    "cloudinary": "^1.23.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "timeago.js": "^4.0.2",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

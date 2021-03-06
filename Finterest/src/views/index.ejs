@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Images</title>
+    <%- include("partial/head") %>
+</head>
+<body>
+    <%- include("partial/Navigation") %>
+
+    <div class="container p-2">
+        <div class="row">
+            <div class="card-columns">
+                <% images.forEach(function(imagen){ %>
+
+                    <div class="card animated zoomInDown">
+                        <img src="<%= imagen.Imagen%>" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title"> <%= imagen.Titulo%> </h5>
+                            <p class="card-text"> <%= imagen.Descripcion%> </p>
+                            <p> <%= format(imagen.FechaCreacion)%> </p>
+                            <a href="images/<%= imagen.ID%>" class="btn btn-primary">
+                                View Profile
+                            </a>
+                        </div>
+                    </div>  
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

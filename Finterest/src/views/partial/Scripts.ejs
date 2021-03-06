@@ -1,0 +1,21 @@
+<script>
+
+function prepareImagen(id_input_file, id_image_content, id_hidden) {
+    var fileToLoad = document.getElementById(id_input_file).files[0]
+    var fileReader = new FileReader();
+    fileReader.onload = function (fileLoadedEvent) {
+        var textAreaFileContents = document.getElementById
+        (
+            id_image_content
+        );
+
+        var text_img = fileLoadedEvent.target.result;
+        textAreaFileContents.src = text_img;
+        
+        document.getElementById(id_hidden).value = text_img;
+    };
+
+    fileReader.readAsDataURL(fileToLoad);
+}
+
+</script>
